@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-forms';
+  myDate = new Date()
+  myString = 'Jason Lee'
+  amount = 123.456789
+  myPercent = 0.323556689
+
+  myNumber = 5
 }
