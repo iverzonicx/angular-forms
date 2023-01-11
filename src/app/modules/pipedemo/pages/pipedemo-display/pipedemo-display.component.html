@@ -1,0 +1,47 @@
+<!-- Pipes -->
+<div class="container">
+
+    <div>date:
+        <div>no pipe: {{myDate}}</div>
+        <div>default: {{myDate | date}}</div>
+        <div>short: {{myDate | date: 'short'}}</div>
+        <div>medium: {{myDate | date: 'medium'}}</div>
+        <div>shortDate: {{myDate | date: 'shortDate'}}</div>
+        <div>mediumDate: {{myDate | date: 'mediumDate'}}</div>
+        <div>longDate: {{myDate | date: 'longDate'}}</div>
+        <div>shortTime: {{myDate | date: 'shortTime'}}</div>
+        <div>mediumTime: {{myDate | date: 'mediumTime'}}</div>
+        <div>longTime: {{myDate | date: 'longTime'}}</div>
+        <div>fullDate: {{myDate | date: 'fullDate'}}</div>
+    </div>
+    <br />
+    <div>uppercase lowercase
+        <div>uppercase: {{myString | uppercase}}</div>
+        <div>uppercase: {{myString | lowercase}}</div>
+    </div>
+    <br />
+    <div>currency:
+        <div>default: {{amount | currency}}</div>
+        <div>PHP: {{amount| currency: 'PHP'}}</div>
+        <div>PHP-code: {{amount| currency: 'PHP' : 'code'}}</div>
+        <div>PHP-symbol-0-padding: {{amount| currency: 'PHP' : 'symbol': '.2-2'}}</div>
+        <div>PHP-code-padding: {{amount| currency: 'PHP' : 'code': '4.2-2'}}</div>
+    </div>
+    <div>chaining:
+        <div>{{myDate | date: 'fullDate' | uppercase}}</div>
+    </div>
+    <br />
+    <div>number:
+        <div>default: {{amount | number}}</div>
+        <div>padding: {{amount | number: '7.2-2'}}</div>
+    </div>
+    <br />
+    <div>percent
+        <div>default: {{myPercent | percent}}</div>
+        <div>decimal places: {{myPercent | percent: '.2-2'}}</div>
+    </div>
+    <br />
+    <div>Custom
+        <div>exponential: {{myNumber | exponential : 3}}</div>
+    </div>
+</div>
